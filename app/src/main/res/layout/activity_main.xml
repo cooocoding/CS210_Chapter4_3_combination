@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <EditText
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Enter a message" />
+
+        <Button
+            android:id="@+id/button_below"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:onClick="sentIntent"
+            android:text="CLICK ME" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:onClick="onToggleButtonClicked"
+            android:text="ToggleButton" />
+
+
+        <CheckBox
+            android:id="@+id/checkBox_milk"
+            android:layout_width="177dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Milk" />
+
+        <CheckBox
+            android:id="@+id/checkBox_sugar"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:onClick="onCheckboxClicked"
+            android:text="Sugar" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="57dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            android:paddingBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/radio_cavemen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:id="@+id/radio_astronauts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="RadioButton" />
+        </RadioGroup>
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:entries="@array/spinner_values"
+            android:padding="16dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:contentDescription="Godness"
+                android:src="@drawable/iv" />
+
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="123dp"
+                android:layout_height="115dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="30dp"
+                android:onClick="onImageButtonClicked"
+                android:src="@drawable/imagebutton" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="96dp"
+                android:layout_height="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="30dp"
+                android:onClick="onSwitchClicked"
+                android:textOff="off"
+                android:textOn="on" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>

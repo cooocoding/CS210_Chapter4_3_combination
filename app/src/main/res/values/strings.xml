@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">lecture4-3</string>
+    <string-array name="spinner_values">
+        <item>tom</item>
+        <item>ben</item>
+        <item>jack</item>
+        <item>jay</item>
+    </string-array>
+</resources>
